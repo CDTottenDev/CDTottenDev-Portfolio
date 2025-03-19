@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540">
+  <!-- Background -->
+  <rect width="960" height="540" fill="#f8f9fa"/>
+  
+  <!-- Header -->
+  <rect width="960" height="60" fill="#2E8B57"/>
+  <text x="30" y="38" font-family="Arial" font-size="24" font-weight="bold" fill="white">EcoTrack</text>
+  <text x="140" y="38" font-family="Arial" font-size="14" fill="white">Environmental Dashboard</text>
+  
+  <!-- Navigation sidebar -->
+  <rect x="0" y="60" width="200" height="480" fill="#f0f0f0"/>
+  <rect x="10" y="80" width="180" height="40" rx="5" fill="#f0f0f0"/>
+  <text x="45" y="105" font-family="Arial" font-size="14" fill="#555">Dashboard</text>
+  <rect x="10" y="130" width="180" height="40" rx="5" fill="#3CB371"/>
+  <text x="45" y="155" font-family="Arial" font-size="14" fill="white">Air Quality</text>
+  <rect x="10" y="180" width="180" height="40" rx="5" fill="#f0f0f0"/>
+  <text x="45" y="205" font-family="Arial" font-size="14" fill="#555">Water Quality</text>
+  <rect x="10" y="230" width="180" height="40" rx="5" fill="#f0f0f0"/>
+  <text x="45" y="255" font-family="Arial" font-size="14" fill="#555">Energy Usage</text>
+  <rect x="10" y="280" width="180" height="40" rx="5" fill="#f0f0f0"/>
+  <text x="45" y="305" font-family="Arial" font-size="14" fill="#555">Community</text>
+  <rect x="10" y="330" width="180" height="40" rx="5" fill="#f0f0f0"/>
+  <text x="45" y="355" font-family="Arial" font-size="14" fill="#555">Reports</text>
+  <rect x="10" y="380" width="180" height="40" rx="5" fill="#f0f0f0"/>
+  <text x="45" y="405" font-family="Arial" font-size="14" fill="#555">Settings</text>
+  
+  <!-- Main content area -->
+  <rect x="210" y="70" width="740" height="460" fill="#ffffff"/>
+  
+  <!-- Page title -->
+  <text x="230" y="100" font-family="Arial" font-size="24" font-weight="bold" fill="#333">Air Quality Monitoring</text>
+  <text x="230" y="125" font-family="Arial" font-size="14" fill="#666">Real-time air quality data and analysis</text>
+  
+  <!-- Current AQI card -->
+  <rect x="230" y="145" width="300" height="160" rx="8" fill="#ffffff" stroke="#ddd" stroke-width="1"/>
+  <text x="250" y="175" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Current Air Quality Index</text>
+  
+  <!-- AQI Gauge -->
+  <circle cx="320" cy="245" r="50" fill="none" stroke="#eee" stroke-width="10"/>
+  <path d="M320 245 L320 195" stroke="#28a745" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="320" cy="245" r="45" fill="none" stroke="#28a745" stroke-width="10" stroke-dasharray="70.7 211.9"/>
+  <circle cx="320" cy="245" r="10" fill="#28a745"/>
+  <text x="320" y="250" font-family="Arial" font-size="24" font-weight="bold" fill="#333" text-anchor="middle">42</text>
+  <text x="320" y="275" font-family="Arial" font-size="16" fill="#28a745" text-anchor="middle">Good</text>
+  
+  <!-- Pollutant card -->
+  <rect x="550" y="145" width="350" height="160" rx="8" fill="#ffffff" stroke="#ddd" stroke-width="1"/>
+  <text x="570" y="175" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Pollutant Levels</text>
+  
+  <!-- Pollutant table -->
+  <rect x="570" y="190" width="310" height="30" fill="#f8f9fa"/>
+  <text x="580" y="210" font-family="Arial" font-size="12" font-weight="bold" fill="#555">Pollutant</text>
+  <text x="700" y="210" font-family="Arial" font-size="12" font-weight="bold" fill="#555">Current Level</text>
+  <text x="800" y="210" font-family="Arial" font-size="12" font-weight="bold" fill="#555">24hr Change</text>
+  
+  <!-- PM2.5 row -->
+  <text x="580" y="240" font-family="Arial" font-size="12" fill="#555">PM2.5</text>
+  <text x="700" y="240" font-family="Arial" font-size="12" fill="#555">12.3 μg/m³</text>
+  <text x="800" y="240" font-family="Arial" font-size="12" fill="#28a745">↓ 4%</text>
+  
+  <!-- PM10 row -->
+  <text x="580" y="265" font-family="Arial" font-size="12" fill="#555">PM10</text>
+  <text x="700" y="265" font-family="Arial" font-size="12" fill="#555">28.5 μg/m³</text>
+  <text x="800" y="265" font-family="Arial" font-size="12" fill="#28a745">↓ 6%</text>
+  
+  <!-- O3 row -->
+  <text x="580" y="290" font-family="Arial" font-size="12" fill="#555">O₃ (Ozone)</text>
+  <text x="700" y="290" font-family="Arial" font-size="12" fill="#555">0.048 ppm</text>
+  <text x="800" y="290" font-family="Arial" font-size="12" fill="#ffc107">↑ 2%</text>
+  
+  <!-- Main air quality chart -->
+  <rect x="230" y="320" width="670" height="190" rx="8" fill="#ffffff" stroke="#ddd" stroke-width="1"/>
+  <text x="250" y="350" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Air Quality Trends</text>
+  
+  <!-- Chart toolbar -->
+  <rect x="700" y="330" width="70" height="25" rx="13" fill="#f0f0f0"/>
+  <text x="735" y="347" font-family="Arial" font-size="12" fill="#555" text-anchor="middle">Week</text>
+  
+  <rect x="780" y="330" width="70" height="25" rx="13" fill="#3CB371"/>
+  <text x="815" y="347" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Month</text>
+  
+  <!-- Air quality chart -->
+  <path d="M250 460 L880 460" stroke="#eee" stroke-width="1"/>
+  <path d="M250 400 L880 400" stroke="#eee" stroke-width="1" stroke-dasharray="5,5"/>
+  <path d="M250 340 L880 340" stroke="#eee" stroke-width="1" stroke-dasharray="5,5"/>
+  
+  <path d="M250 460 L250 340" stroke="#eee" stroke-width="1"/>
+  <text x="240" y="465" text-anchor="end" font-family="Arial" font-size="10" fill="#888">0</text>
+  <text x="240" y="405" text-anchor="end" font-family="Arial" font-size="10" fill="#888">50</text>
+  <text x="240" y="345" text-anchor="end" font-family="Arial" font-size="10" fill="#888">100</text>
+  
+  <!-- PM2.5 chart data -->
+  <path d="M270 440 L310 435 L350 430 L390 420 L430 425 L470 430 L510 420 L550 410 L590 415 L630 400 L670 410 L710 415 L750 405 L790 410 L830 400 L870 390" 
+        fill="none" stroke="#28a745" stroke-width="2"/>
+        
+  <!-- O3 chart data -->
+  <path d="M270 450 L310 445 L350 440 L390 430 L430 440 L470 435 L510 425 L550 420 L590 415 L630 425 L670 430 L710 420 L750 415 L790 410 L830 420 L870 415" 
+        fill="none" stroke="#007bff" stroke-width="2" stroke-dasharray="5,3"/>
+  
+  <!-- Chart legend -->
+  <circle cx="780" y="370" r="4" fill="#28a745"/>
+  <text x="790" y="374" font-family="Arial" font-size="12" fill="#555">PM2.5</text>
+  <circle cx="840" y="370" r="4" fill="#007bff"/>
+  <text x="850" y="374" font-family="Arial" font-size="12" fill="#555">O₃</text>
+  
+  <!-- X-axis labels -->
+  <text x="270" y="480" text-anchor="middle" font-family="Arial" font-size="9" fill="#888">Feb 16</text>
+  <text x="350" y="480" text-anchor="middle" font-family="Arial" font-size="9" fill="#888">Feb 19</text>
+  <text x="430" y="480" text-anchor="middle" font-family="Arial" font-size="9" fill="#888">Feb 22</text>
+  <text x="510" y="480" text-anchor="middle" font-family="Arial" font-size="9" fill="#888">Feb 25</text>
+  <text x="590" y="480" text-anchor="middle" font-family="Arial" font-size="9" fill="#888">Feb 28</text>
+  <text x="670" y="480" text-anchor="middle" font-family="Arial" font-size="9" fill="#888">Mar 3</text>
+  <text x="750" y="480" text-anchor="middle" font-family="Arial" font-size="9" fill="#888">Mar 6</text>
+  <text x="830" y="480" text-anchor="middle" font-family="Arial" font-size="9" fill="#888">Mar 9</text>
+
+  <!-- Notification bell -->
+  <circle cx="880" cy="30" r="18" fill="transparent"/>
+  <path d="M880 15 L880 30 L890 30" stroke="white" stroke-width="2" fill="none"/>
+  <circle cx="880" cy="15" r="8" fill="transparent" stroke="white" stroke-width="2"/>
+  
+  <!-- User profile -->
+  <circle cx="920" cy="30" r="20" fill="#175437"/>
+  <text x="920" y="35" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">JS</text>
+</svg>

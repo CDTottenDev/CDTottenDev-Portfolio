@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 640">
+  <!-- App header -->
+  <rect x="0" y="0" width="360" height="60" fill="#0d6efd" />
+  <text x="180" y="35" font-family="Arial" font-size="20" font-weight="bold" fill="white" text-anchor="middle">Resource Tracker</text>
+  <circle cx="30" cy="30" r="15" fill="white" opacity="0.8" />
+  <text x="30" y="35" font-family="Arial" font-size="14" font-weight="bold" fill="#0d6efd" text-anchor="middle">≡</text>
+  
+  <!-- Project selector tabs -->
+  <rect x="0" y="60" width="360" height="40" fill="#e9ecef" />
+  <rect x="0" y="60" width="120" height="40" fill="#0d6efd" />
+  <text x="60" y="85" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Downtown</text>
+  <text x="180" y="85" font-family="Arial" font-size="14" fill="#666" text-anchor="middle">Riverside</text>
+  <text x="300" y="85" font-family="Arial" font-size="14" fill="#666" text-anchor="middle">Parkside</text>
+  
+  <!-- Resources overview -->
+  <text x="15" y="125" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Equipment</text>
+  
+  <!-- Resource item 1 -->
+  <rect x="15" y="135" width="325" height="80" rx="10" fill="white" stroke="#ddd" />
+  <text x="40" y="165" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Excavator #103</text>
+  <text x="40" y="185" font-family="Arial" font-size="14" fill="#666">Assigned to: North Section</text>
+  <text x="40" y="205" font-family="Arial" font-size="12" fill="#198754">In Use • 3h 24m</text>
+  <rect x="300" y="165" width="20" height="20" fill="#198754" rx="5" />
+  <text x="310" y="180" font-family="Arial" font-size="14" fill="white" text-anchor="middle">✓</text>
+  
+  <!-- Resource item 2 -->
+  <rect x="15" y="225" width="325" height="80" rx="10" fill="white" stroke="#ddd" />
+  <text x="40" y="255" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Concrete Mixer #87</text>
+  <text x="40" y="275" font-family="Arial" font-size="14" fill="#666">Assigned to: Foundation Area</text>
+  <text x="40" y="295" font-family="Arial" font-size="12" fill="#dc3545">Maintenance • 1h 15m</text>
+  <rect x="300" y="255" width="20" height="20" fill="#dc3545" rx="5" />
+  <text x="310" y="270" font-family="Arial" font-size="14" fill="white" text-anchor="middle">!</text>
+  
+  <!-- Resource item 3 -->
+  <rect x="15" y="315" width="325" height="80" rx="10" fill="white" stroke="#ddd" />
+  <text x="40" y="345" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Crane #201</text>
+  <text x="40" y="365" font-family="Arial" font-size="14" fill="#666">Assigned to: Central Tower</text>
+  <text x="40" y="385" font-family="Arial" font-size="12" fill="#0d6efd">Available</text>
+  <rect x="300" y="345" width="20" height="20" fill="#0d6efd" rx="5" />
+  <text x="310" y="360" font-family="Arial" font-size="14" fill="white" text-anchor="middle">i</text>
+  
+  <!-- Materials section -->
+  <text x="15" y="425" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Materials</text>
+  
+  <!-- Simple usage graph -->
+  <rect x="15" y="435" width="325" height="130" rx="10" fill="white" stroke="#ddd" />
+  
+  <!-- Graph bars -->
+  <text x="35" y="460" font-family="Arial" font-size="12" fill="#666">Concrete</text>
+  <rect x="110" y="450" width="180" height="15" rx="3" fill="#eee" />
+  <rect x="110" y="450" width="126" height="15" rx="3" fill="#0d6efd" />
+  <text x="300" y="462" font-family="Arial" font-size="12" fill="#333" text-anchor="end">70%</text>
+  
+  <text x="35" y="485" font-family="Arial" font-size="12" fill="#666">Steel</text>
+  <rect x="110" y="475" width="180" height="15" rx="3" fill="#eee" />
+  <rect x="110" y="475" width="90" height="15" rx="3" fill="#0d6efd" />
+  <text x="300" y="487" font-family="Arial" font-size="12" fill="#333" text-anchor="end">50%</text>
+  
+  <text x="35" y="510" font-family="Arial" font-size="12" fill="#666">Lumber</text>
+  <rect x="110" y="500" width="180" height="15" rx="3" fill="#eee" />
+  <rect x="110" y="500" width="162" height="15" rx="3" fill="#0d6efd" />
+  <text x="300" y="512" font-family="Arial" font-size="12" fill="#333" text-anchor="end">90%</text>
+  
+  <text x="35" y="535" font-family="Arial" font-size="12" fill="#666">Glass</text>
+  <rect x="110" y="525" width="180" height="15" rx="3" fill="#eee" />
+  <rect x="110" y="525" width="36" height="15" rx="3" fill="#0d6efd" />
+  <text x="300" y="537" font-family="Arial" font-size="12" fill="#333" text-anchor="end">20%</text>
+  
+  <!-- Bottom action button -->
+  <rect x="15" y="580" width="325" height="50" rx="25" fill="#0d6efd" />
+  <text x="180" y="612" font-family="Arial" font-size="18" font-weight="bold" fill="white" text-anchor="middle">Request Resources</text>
+</svg>

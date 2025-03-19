@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Services | Your Site Name',
-  description: 'Our services and offerings',
+  title: 'Projects | CDTotten Dev',
+  description: 'Our projects and offerings',
 }
 
-export default function ServicesLayout({
+export default function ProjectsLayout({
   children,
 }: {
   children: React.ReactNode

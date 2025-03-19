@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 640">
+  <!-- App header -->
+  <rect x="0" y="0" width="360" height="60" fill="#0d6efd" />
+  <text x="180" y="35" font-family="Arial" font-size="20" font-weight="bold" fill="white" text-anchor="middle">Daily Report</text>
+  <circle cx="30" cy="30" r="15" fill="white" opacity="0.8" />
+  <text x="30" y="35" font-family="Arial" font-size="14" font-weight="bold" fill="#0d6efd" text-anchor="middle">←</text>
+  
+  <!-- Project selector -->
+  <rect x="15" y="75" width="325" height="50" rx="10" fill="white" stroke="#ddd" />
+  <text x="35" y="95" font-family="Arial" font-size="12" fill="#666">Project</text>
+  <text x="35" y="115" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Downtown Tower Project</text>
+  <text x="320" y="107" font-family="Arial" font-size="16" fill="#666" text-anchor="end">▼</text>
+  
+  <!-- Date picker -->
+  <rect x="15" y="135" width="325" height="50" rx="10" fill="white" stroke="#ddd" />
+  <text x="35" y="155" font-family="Arial" font-size="12" fill="#666">Date</text>
+  <text x="35" y="175" font-family="Arial" font-size="16" font-weight="bold" fill="#333">July 15, 2024</text>
+  <text x="320" y="167" font-family="Arial" font-size="16" fill="#666" text-anchor="end">📅</text>
+  
+  <!-- Weather summary -->
+  <rect x="15" y="195" width="325" height="50" rx="10" fill="white" stroke="#ddd" />
+  <text x="35" y="215" font-family="Arial" font-size="12" fill="#666">Weather</text>
+  <text x="35" y="235" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Sunny, 86°F, Wind 3mph</text>
+  <circle cx="300" cy="220" r="12" fill="#FFD700" />
+  
+  <!-- Work completed section -->
+  <text x="15" y="270" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Work Completed</text>
+  <rect x="15" y="280" width="325" height="100" rx="10" fill="white" stroke="#ddd" />
+  <text x="35" y="300" font-family="Arial" font-size="12" fill="#666" font-style="italic">Enter today's progress...</text>
+  <line x1="35" y1="310" x2="320" y2="310" stroke="#eee" />
+  <line x1="35" y1="330" x2="320" y2="330" stroke="#eee" />
+  <line x1="35" y1="350" x2="320" y2="350" stroke="#eee" />
+  
+  <!-- Photo documentation -->
+  <text x="15" y="405" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Photo Documentation</text>
+  
+  <rect x="15" y="415" width="155" height="120" rx="10" fill="white" stroke="#ddd" />
+  <rect x="35" y="435" width="115" height="80" rx="5" fill="#eee" />
+  <text x="92" y="475" font-family="Arial" font-size="24" fill="#aaa" text-anchor="middle">+</text>
+  <text x="92" y="500" font-family="Arial" font-size="12" fill="#666" text-anchor="middle">Add photo</text>
+  
+  <rect x="185" y="415" width="155" height="120" rx="10" fill="white" stroke="#ddd" />
+  <rect x="205" y="435" width="115" height="80" rx="5" fill="#eee" />
+  <text x="262" y="475" font-family="Arial" font-size="24" fill="#aaa" text-anchor="middle">+</text>
+  <text x="262" y="500" font-family="Arial" font-size="12" fill="#666" text-anchor="middle">Add photo</text>
+  
+  <!-- Submit button -->
+  <rect x="15" y="560" width="325" height="50" rx="25" fill="#0d6efd" />
+  <text x="180" y="592" font-family="Arial" font-size="18" font-weight="bold" fill="white" text-anchor="middle">Submit Report</text>
+</svg>

@@ -1,0 +1,244 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#f5f7fa" />
+  
+  <!-- Left Sidebar -->
+  <rect x="0" y="0" width="220" height="800" fill="#2c3e50" />
+  
+  <!-- App Logo -->
+  <rect x="30" y="20" width="160" height="60" rx="5" fill="#3498db" />
+  <text x="55" y="57" font-family="Arial" font-size="22" font-weight="bold" fill="white">InventoryPro</text>
+  
+  <!-- Navigation Menu -->
+  <g>
+    <!-- Dashboard -->
+    <rect x="20" y="120" width="180" height="40" rx="5" fill="#34495e" />
+    <text x="60" y="145" font-family="Arial" font-size="14" fill="white">Dashboard</text>
+    <rect x="30" y="132" width="16" height="16" fill="none" stroke="white" stroke-width="2" />
+    
+    <!-- Inventory -->
+    <rect x="20" y="170" width="180" height="40" rx="5" fill="#3498db" />
+    <text x="60" y="195" font-family="Arial" font-size="14" fill="white">Inventory</text>
+    <rect x="30" y="182" width="16" height="16" fill="none" stroke="white" stroke-width="2" />
+    
+    <!-- Orders -->
+    <rect x="20" y="220" width="180" height="40" rx="5" fill="#34495e" />
+    <text x="60" y="245" font-family="Arial" font-size="14" fill="white">Orders</text>
+    <rect x="30" y="232" width="16" height="16" fill="none" stroke="white" stroke-width="2" />
+    
+    <!-- Suppliers -->
+    <rect x="20" y="270" width="180" height="40" rx="5" fill="#34495e" />
+    <text x="60" y="295" font-family="Arial" font-size="14" fill="white">Suppliers</text>
+    <rect x="30" y="282" width="16" height="16" fill="none" stroke="white" stroke-width="2" />
+    
+    <!-- Reports -->
+    <rect x="20" y="320" width="180" height="40" rx="5" fill="#34495e" />
+    <text x="60" y="345" font-family="Arial" font-size="14" fill="white">Reports</text>
+    <rect x="30" y="332" width="16" height="16" fill="none" stroke="white" stroke-width="2" />
+    
+    <!-- Settings -->
+    <rect x="20" y="370" width="180" height="40" rx="5" fill="#34495e" />
+    <text x="60" y="395" font-family="Arial" font-size="14" fill="white">Settings</text>
+    <rect x="30" y="382" width="16" height="16" fill="none" stroke="white" stroke-width="2" />
+  </g>
+  
+  <!-- Top Bar -->
+  <rect x="220" y="0" width="980" height="60" fill="white" />
+  <rect x="220" y="59" width="980" height="1" fill="#e0e0e0" />
+  
+  <!-- Page Title -->
+  <text x="250" y="37" font-family="Arial" font-size="20" font-weight="bold" fill="#2c3e50">Inventory Management</text>
+  
+  <!-- Search Bar -->
+  <rect x="600" y="15" width="300" height="30" rx="5" fill="#f5f7fa" stroke="#e0e0e0" stroke-width="1" />
+  <text x="620" y="35" font-family="Arial" font-size="14" fill="#9aa3ac">Search products, orders...</text>
+  <circle cx="610" cy="30" r="7" fill="none" stroke="#9aa3ac" stroke-width="2" />
+  
+  <!-- User Profile -->
+  <circle cx="1120" cy="30" r="20" fill="#3498db" />
+  <text x="1120" y="35" font-family="Arial" font-size="14" fill="white" text-anchor="middle">JW</text>
+  
+  <!-- Main Content Area -->
+  <rect x="240" y="80" width="940" height="60" rx="5" fill="white" stroke="#e0e0e0" stroke-width="1" />
+  
+  <!-- Filter/Actions Bar -->
+  <text x="260" y="115" font-family="Arial" font-size="14" fill="#2c3e50">Category:</text>
+  <rect x="330" y="95" width="120" height="30" rx="3" fill="white" stroke="#e0e0e0" stroke-width="1" />
+  <text x="340" y="115" font-family="Arial" font-size="14" fill="#2c3e50">All Items</text>
+  
+  <text x="470" y="115" font-family="Arial" font-size="14" fill="#2c3e50">Location:</text>
+  <rect x="540" y="95" width="120" height="30" rx="3" fill="white" stroke="#e0e0e0" stroke-width="1" />
+  <text x="550" y="115" font-family="Arial" font-size="14" fill="#2c3e50">Main Store</text>
+  
+  <rect x="970" y="95" width="190" height="30" rx="3" fill="#27ae60" />
+  <text x="1025" y="115" font-family="Arial" font-size="14" fill="white" text-anchor="middle">+ Add New Item</text>
+  
+  <!-- Product Table Header -->
+  <rect x="240" y="160" width="940" height="40" fill="#f5f7fa" />
+  <rect x="240" y="160" width="100" height="40" fill="#f5f7fa" />
+  <text x="270" y="185" font-family="Arial" font-size="14" font-weight="bold" fill="#2c3e50">SKU</text>
+  
+  <rect x="340" y="160" width="220" height="40" fill="#f5f7fa" />
+  <text x="350" y="185" font-family="Arial" font-size="14" font-weight="bold" fill="#2c3e50">Product Name</text>
+  
+  <rect x="560" y="160" width="120" height="40" fill="#f5f7fa" />
+  <text x="570" y="185" font-family="Arial" font-size="14" font-weight="bold" fill="#2c3e50">Category</text>
+  
+  <rect x="680" y="160" width="100" height="40" fill="#f5f7fa" />
+  <text x="690" y="185" font-family="Arial" font-size="14" font-weight="bold" fill="#2c3e50">In Stock</text>
+  
+  <rect x="780" y="160" width="120" height="40" fill="#f5f7fa" />
+  <text x="790" y="185" font-family="Arial" font-size="14" font-weight="bold" fill="#2c3e50">Price</text>
+  
+  <rect x="900" y="160" width="120" height="40" fill="#f5f7fa" />
+  <text x="910" y="185" font-family="Arial" font-size="14" font-weight="bold" fill="#2c3e50">Status</text>
+  
+  <rect x="1020" y="160" width="160" height="40" fill="#f5f7fa" />
+  <text x="1085" y="185" font-family="Arial" font-size="14" font-weight="bold" fill="#2c3e50" text-anchor="middle">Actions</text>
+  
+  <!-- Table Rows -->
+  <!-- Row 1 -->
+  <rect x="240" y="200" width="940" height="60" fill="white" stroke="#e0e0e0" stroke-width="1" />
+  <text x="270" y="235" font-family="Arial" font-size="14" fill="#2c3e50">TS-1001</text>
+  <text x="350" y="235" font-family="Arial" font-size="14" fill="#2c3e50">Men's Blue T-Shirt</text>
+  <text x="570" y="235" font-family="Arial" font-size="14" fill="#2c3e50">Clothing</text>
+  <text x="690" y="235" font-family="Arial" font-size="14" font-weight="bold" fill="#2c3e50">127</text>
+  <text x="790" y="235" font-family="Arial" font-size="14" fill="#2c3e50">$24.99</text>
+  <rect x="910" y="225" width="80" height="20" rx="10" fill="#27ae60" fill-opacity="0.2" />
+  <text x="950" y="239" font-family="Arial" font-size="12" fill="#27ae60" text-anchor="middle">In Stock</text>
+  <rect x="1040" y="220" width="30" height="30" rx="3" fill="#3498db" />
+  <text x="1055" y="240" font-family="Arial" font-size="14" fill="white" text-anchor="middle">E</text>
+  <rect x="1080" y="220" width="30" height="30" rx="3" fill="#e74c3c" />
+  <text x="1095" y="240" font-family="Arial" font-size="14" fill="white" text-anchor="middle">D</text>
+  <rect x="1120" y="220" width="30" height="30" rx="3" fill="#f39c12" />
+  <text x="1135" y="240" font-family="Arial" font-size="14" fill="white" text-anchor="middle">V</text>
+  
+  <!-- Row 2 -->
+  <rect x="240" y="260" width="940" height="60" fill="white" stroke="#e0e0e0" stroke-width="1" />
+  <text x="270" y="295" font-family="Arial" font-size="14" fill="#2c3e50">JN-2145</text>
+  <text x="350" y="295" font-family="Arial" font-size="14" fill="#2c3e50">Slim Fit Jeans</text>
+  <text x="570" y="295" font-family="Arial" font-size="14" fill="#2c3e50">Clothing</text>
+  <text x="690" y="295" font-family="Arial" font-size="14" font-weight="bold" fill="#2c3e50">43</text>
+  <text x="790" y="295" font-family="Arial" font-size="14" fill="#2c3e50">$59.99</text>
+  <rect x="910" y="285" width="80" height="20" rx="10" fill="#27ae60" fill-opacity="0.2" />
+  <text x="950" y="299" font-family="Arial" font-size="12" fill="#27ae60" text-anchor="middle">In Stock</text>
+  <rect x="1040" y="280" width="30" height="30" rx="3" fill="#3498db" />
+  <text x="1055" y="300" font-family="Arial" font-size="14" fill="white" text-anchor="middle">E</text>
+  <rect x="1080" y="280" width="30" height="30" rx="3" fill="#e74c3c" />
+  <text x="1095" y="300" font-family="Arial" font-size="14" fill="white" text-anchor="middle">D</text>
+  <rect x="1120" y="280" width="30" height="30" rx="3" fill="#f39c12" />
+  <text x="1135" y="300" font-family="Arial" font-size="14" fill="white" text-anchor="middle">V</text>
+  
+  <!-- Row 3 -->
+  <rect x="240" y="320" width="940" height="60" fill="white" stroke="#e0e0e0" stroke-width="1" />
+  <text x="270" y="355" font-family="Arial" font-size="14" fill="#2c3e50">SW-3621</text>
+  <text x="350" y="355" font-family="Arial" font-size="14" fill="#2c3e50">Women's Sweater</text>
+  <text x="570" y="355" font-family="Arial" font-size="14" fill="#2c3e50">Clothing</text>
+  <text x="690" y="355" font-family="Arial" font-size="14" font-weight="bold" fill="#e74c3c">3</text>
+  <text x="790" y="355" font-family="Arial" font-size="14" fill="#2c3e50">$49.99</text>
+  <rect x="910" y="345" width="80" height="20" rx="10" fill="#f39c12" fill-opacity="0.2" />
+  <text x="950" y="359" font-family="Arial" font-size="12" fill="#f39c12" text-anchor="middle">Low Stock</text>
+  <rect x="1040" y="340" width="30" height="30" rx="3" fill="#3498db" />
+  <text x="1055" y="360" font-family="Arial" font-size="14" fill="white" text-anchor="middle">E</text>
+  <rect x="1080" y="340" width="30" height="30" rx="3" fill="#e74c3c" />
+  <text x="1095" y="360" font-family="Arial" font-size="14" fill="white" text-anchor="middle">D</text>
+  <rect x="1120" y="340" width="30" height="30" rx="3" fill="#f39c12" />
+  <text x="1135" y="360" font-family="Arial" font-size="14" fill="white" text-anchor="middle">V</text>
+  
+  <!-- Row 4 -->
+  <rect x="240" y="380" width="940" height="60" fill="white" stroke="#e0e0e0" stroke-width="1" />
+  <text x="270" y="415" font-family="Arial" font-size="14" fill="#2c3e50">BH-4276</text>
+  <text x="350" y="415" font-family="Arial" font-size="14" fill="#2c3e50">Bluetooth Headphones</text>
+  <text x="570" y="415" font-family="Arial" font-size="14" fill="#2c3e50">Electronics</text>
+  <text x="690" y="415" font-family="Arial" font-size="14" font-weight="bold" fill="#2c3e50">54</text>
+  <text x="790" y="415" font-family="Arial" font-size="14" fill="#2c3e50">$89.99</text>
+  <rect x="910" y="405" width="80" height="20" rx="10" fill="#27ae60" fill-opacity="0.2" />
+  <text x="950" y="419" font-family="Arial" font-size="12" fill="#27ae60" text-anchor="middle">In Stock</text>
+  <rect x="1040" y="400" width="30" height="30" rx="3" fill="#3498db" />
+  <text x="1055" y="420" font-family="Arial" font-size="14" fill="white" text-anchor="middle">E</text>
+  <rect x="1080" y="400" width="30" height="30" rx="3" fill="#e74c3c" />
+  <text x="1095" y="420" font-family="Arial" font-size="14" fill="white" text-anchor="middle">D</text>
+  <rect x="1120" y="400" width="30" height="30" rx="3" fill="#f39c12" />
+  <text x="1135" y="420" font-family="Arial" font-size="14" fill="white" text-anchor="middle">V</text>
+  
+  <!-- Row 5 -->
+  <rect x="240" y="440" width="940" height="60" fill="white" stroke="#e0e0e0" stroke-width="1" />
+  <text x="270" y="475" font-family="Arial" font-size="14" fill="#2c3e50">SC-5890</text>
+  <text x="350" y="475" font-family="Arial" font-size="14" fill="#2c3e50">Smart Watch</text>
+  <text x="570" y="475" font-family="Arial" font-size="14" fill="#2c3e50">Electronics</text>
+  <text x="690" y="475" font-family="Arial" font-size="14" font-weight="bold" fill="#e74c3c">0</text>
+  <text x="790" y="475" font-family="Arial" font-size="14" fill="#2c3e50">$199.99</text>
+  <rect x="910" y="465" width="80" height="20" rx="10" fill="#e74c3c" fill-opacity="0.2" />
+  <text x="950" y="479" font-family="Arial" font-size="12" fill="#e74c3c" text-anchor="middle">Out of Stock</text>
+  <rect x="1040" y="460" width="30" height="30" rx="3" fill="#3498db" />
+  <text x="1055" y="480" font-family="Arial" font-size="14" fill="white" text-anchor="middle">E</text>
+  <rect x="1080" y="460" width="30" height="30" rx="3" fill="#e74c3c" />
+  <text x="1095" y="480" font-family="Arial" font-size="14" fill="white" text-anchor="middle">D</text>
+  <rect x="1120" y="460" width="30" height="30" rx="3" fill="#f39c12" />
+  <text x="1135" y="480" font-family="Arial" font-size="14" fill="white" text-anchor="middle">V</text>
+  
+  <!-- Pagination -->
+  <rect x="240" y="520" width="940" height="50" fill="white" />
+  <text x="260" y="550" font-family="Arial" font-size="14" fill="#2c3e50">Showing 1-5 of 247 items</text>
+  <rect x="880" y="530" width="30" height="30" rx="3" fill="#f5f7fa" stroke="#e0e0e0" stroke-width="1" />
+  <text x="895" y="550" font-family="Arial" font-size="14" fill="#2c3e50" text-anchor="middle">1</text>
+  <rect x="920" y="530" width="30" height="30" rx="3" fill="#3498db" />
+  <text x="935" y="550" font-family="Arial" font-size="14" fill="white" text-anchor="middle">2</text>
+  <rect x="960" y="530" width="30" height="30" rx="3" fill="#f5f7fa" stroke="#e0e0e0" stroke-width="1" />
+  <text x="975" y="550" font-family="Arial" font-size="14" fill="#2c3e50" text-anchor="middle">3</text>
+  <rect x="1000" y="530" width="30" height="30" rx="3" fill="#f5f7fa" stroke="#e0e0e0" stroke-width="1" />
+  <text x="1015" y="550" font-family="Arial" font-size="14" fill="#2c3e50" text-anchor="middle">4</text>
+  <rect x="1040" y="530" width="80" height="30" rx="3" fill="#f5f7fa" stroke="#e0e0e0" stroke-width="1" />
+  <text x="1080" y="550" font-family="Arial" font-size="14" fill="#2c3e50" text-anchor="middle">Next →</text>
+  
+  <!-- Analytics Section -->
+  <rect x="240" y="590" width="300" height="190" rx="5" fill="white" stroke="#e0e0e0" stroke-width="1" />
+  <text x="260" y="620" font-family="Arial" font-size="16" font-weight="bold" fill="#2c3e50">Inventory Summary</text>
+  
+  <!-- Bar Chart -->
+  <rect x="260" y="640" width="260" height="120" fill="#f5f7fa" stroke="#e0e0e0" stroke-width="1" />
+  <rect x="280" y="670" width="40" height="70" fill="#3498db" />
+  <rect x="330" y="650" width="40" height="90" fill="#3498db" />
+  <rect x="380" y="690" width="40" height="50" fill="#3498db" />
+  <rect x="430" y="640" width="40" height="100" fill="#3498db" />
+  <rect x="480" y="680" width="40" height="60" fill="#3498db" />
+  <line x1="260" y1="740" x2="520" y2="740" stroke="#e0e0e0" stroke-width="1" />
+  <text x="300" y="760" font-family="Arial" font-size="10" fill="#2c3e50" text-anchor="middle">Clothing</text>
+  <text x="350" y="760" font-family="Arial" font-size="10" fill="#2c3e50" text-anchor="middle">Electronics</text>
+  <text x="400" y="760" font-family="Arial" font-size="10" fill="#2c3e50" text-anchor="middle">Home</text>
+  <text x="450" y="760" font-family="Arial" font-size="10" fill="#2c3e50" text-anchor="middle">Sports</text>
+  <text x="500" y="760" font-family="Arial" font-size="10" fill="#2c3e50" text-anchor="middle">Beauty</text>
+  
+  <!-- Status Cards -->
+  <rect x="560" y="590" width="180" height="90" rx="5" fill="white" stroke="#e0e0e0" stroke-width="1" />
+  <text x="580" y="620" font-family="Arial" font-size="14" font-weight="bold" fill="#2c3e50">Products Low in Stock</text>
+  <text x="580" y="655" font-family="Arial" font-size="24" font-weight="bold" fill="#f39c12">15</text>
+  
+  <rect x="560" y="690" width="180" height="90" rx="5" fill="white" stroke="#e0e0e0" stroke-width="1" />
+  <text x="580" y="720" font-family="Arial" font-size="14" font-weight="bold" fill="#2c3e50">Out of Stock Items</text>
+  <text x="580" y="755" font-family="Arial" font-size="24" font-weight="bold" fill="#e74c3c">7</text>
+  
+  <rect x="760" y="590" width="180" height="90" rx="5" fill="white" stroke="#e0e0e0" stroke-width="1" />
+  <text x="780" y="620" font-family="Arial" font-size="14" font-weight="bold" fill="#2c3e50">Pending Orders</text>
+  <text x="780" y="655" font-family="Arial" font-size="24" font-weight="bold" fill="#3498db">23</text>
+  
+  <rect x="760" y="690" width="180" height="90" rx="5" fill="white" stroke="#e0e0e0" stroke-width="1" />
+  <text x="780" y="720" font-family="Arial" font-size="14" font-weight="bold" fill="#2c3e50">Total Products</text>
+  <text x="780" y="755" font-family="Arial" font-size="24" font-weight="bold" fill="#2c3e50">247</text>
+  
+  <!-- Notifications Panel -->
+  <rect x="960" y="590" width="220" height="190" rx="5" fill="white" stroke="#e0e0e0" stroke-width="1" />
+  <text x="980" y="620" font-family="Arial" font-size="16" font-weight="bold" fill="#2c3e50">Recent Alerts</text>
+  
+  <rect x="980" y="640" width="180" height="40" fill="#f39c12" fill-opacity="0.1" rx="3" />
+  <text x="980" y="660" font-family="Arial" font-size="12" font-weight="bold" fill="#f39c12">Women's Sweater low in stock</text>
+  <text x="980" y="675" font-family="Arial" font-size="10" fill="#2c3e50">Today, 10:23 AM</text>
+  
+  <rect x="980" y="690" width="180" height="40" fill="#e74c3c" fill-opacity="0.1" rx="3" />
+  <text x="980" y="710" font-family="Arial" font-size="12" font-weight="bold" fill="#e74c3c">Smart Watch out of stock</text>
+  <text x="980" y="725" font-family="Arial" font-size="10" fill="#2c3e50">Today, 09:45 AM</text>
+  
+  <rect x="980" y="740" width="180" height="40" fill="#3498db" fill-opacity="0.1" rx="3" />
+  <text x="980" y="760" font-family="Arial" font-size="12" font-weight="bold" fill="#3498db">New order #ORD-7845 received</text>
+  <text x="980" y="775" font-family="Arial" font-size="10" fill="#2c3e50">Yesterday, 04:32 PM</text>
+</svg>

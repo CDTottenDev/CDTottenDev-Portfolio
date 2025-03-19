@@ -3,23 +3,20 @@ import { ThemeSwitch } from './ui/themeswitch'
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="fixed top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center">
         <div className="mr-4 flex">
           <Link className="mr-6 flex items-center space-x-2" href="/">
             <span className="text-xl font-bold text-primary hover:text-primary/90 transition-colors">
-              Central Oregon Web Designs
+              CDTotten Dev
             </span>
           </Link>
         </div>
         <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
           <nav className="flex items-center space-x-6">
             {[
-              ['About', '/about'],
-              ['Services', '/services'],
-              ['Blog', '/blog'],
-              ['Testimonials', '/testimonials'],
-              ['Contact', '/contact'],
+              ['Projects', '/projects'],
+              ['Contact', '/#contact'],
             ].map(([title, url]) => (
               <Link 
                 key={url} 

@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540">
+  <!-- Background -->
+  <rect width="960" height="540" fill="#f8f9fa"/>
+  
+  <!-- Header -->
+  <rect width="960" height="60" fill="#2E8B57"/>
+  <text x="30" y="38" font-family="Arial" font-size="24" font-weight="bold" fill="white">EcoTrack</text>
+  <text x="140" y="38" font-family="Arial" font-size="14" fill="white">Environmental Dashboard</text>
+  
+  <!-- Navigation sidebar -->
+  <rect x="0" y="60" width="200" height="480" fill="#f0f0f0"/>
+  <rect x="10" y="80" width="180" height="40" rx="5" fill="#f0f0f0"/>
+  <text x="45" y="105" font-family="Arial" font-size="14" fill="#555">Dashboard</text>
+  <rect x="10" y="130" width="180" height="40" rx="5" fill="#f0f0f0"/>
+  <text x="45" y="155" font-family="Arial" font-size="14" fill="#555">Air Quality</text>
+  <rect x="10" y="180" width="180" height="40" rx="5" fill="#f0f0f0"/>
+  <text x="45" y="205" font-family="Arial" font-size="14" fill="#555">Water Quality</text>
+  <rect x="10" y="230" width="180" height="40" rx="5" fill="#f0f0f0"/>
+  <text x="45" y="255" font-family="Arial" font-size="14" fill="#555">Energy Usage</text>
+  <rect x="10" y="280" width="180" height="40" rx="5" fill="#f0f0f0"/>
+  <text x="45" y="305" font-family="Arial" font-size="14" fill="#555">Community</text>
+  <rect x="10" y="330" width="180" height="40" rx="5" fill="#f0f0f0"/>
+  <text x="45" y="355" font-family="Arial" font-size="14" fill="#555">Reports</text>
+  <rect x="10" y="380" width="180" height="40" rx="5" fill="#3CB371"/>
+  <text x="45" y="405" font-family="Arial" font-size="14" fill="white">Settings</text>
+  
+  <!-- Main content area -->
+  <rect x="210" y="70" width="740" height="460" fill="#ffffff"/>
+  
+  <!-- Page title -->
+  <text x="230" y="100" font-family="Arial" font-size="24" font-weight="bold" fill="#333">Settings</text>
+  <text x="230" y="125" font-family="Arial" font-size="14" fill="#666">Customize your EcoTrack experience</text>
+  
+  <!-- Settings tabs -->
+  <rect x="230" y="145" width="670" height="40" fill="#ffffff" stroke="#ddd" stroke-width="1"/>
+  <rect x="230" y="145" width="167" height="40" fill="#3CB371"/>
+  <text x="313" y="170" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Account</text>
+  <text x="480" y="170" font-family="Arial" font-size="14" fill="#555" text-anchor="middle">Notifications</text>
+  <text x="647" y="170" font-family="Arial" font-size="14" fill="#555" text-anchor="middle">Data Sources</text>
+  <text x="814" y="170" font-family="Arial" font-size="14" fill="#555" text-anchor="middle">API Access</text>
+  
+  <!-- Account settings section -->
+  <rect x="230" y="195" width="670" height="325" fill="#ffffff" stroke="#ddd" stroke-width="1"/>
+  
+  <!-- Profile information -->
+  <text x="250" y="225" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Profile Information</text>
+  
+  <!-- Profile picture -->
+  <circle cx="280" cy="270" r="30" fill="#175437"/>
+  <text x="280" y="278" font-family="Arial" font-size="18" font-weight="bold" fill="white" text-anchor="middle">JS</text>
+  <rect x="320" y="260" width="100" height="30" rx="5" fill="#f0f0f0"/>
+  <text x="370" y="280" font-family="Arial" font-size="12" fill="#555" text-anchor="middle">Change Photo</text>
+  
+  <!-- Form fields -->
+  <text x="250" y="320" font-family="Arial" font-size="14" fill="#555">Name</text>
+  <rect x="250" y="330" width="300" height="36" rx="5" fill="#ffffff" stroke="#ddd" stroke-width="1"/>
+  <text x="265" y="355" font-family="Arial" font-size="14" fill="#333">John Smith</text>
+  
+  <text x="570" y="320" font-family="Arial" font-size="14" fill="#555">Organization</text>
+  <rect x="570" y="330" width="300" height="36" rx="5" fill="#ffffff" stroke="#ddd" stroke-width="1"/>
+  <text x="585" y="355" font-family="Arial" font-size="14" fill="#333">Green City Initiative</text>
+  
+  <text x="250" y="390" font-family="Arial" font-size="14" fill="#555">Email</text>
+  <rect x="250" y="400" width="300" height="36" rx="5" fill="#ffffff" stroke="#ddd" stroke-width="1"/>
+  <text x="265" y="425" font-family="Arial" font-size="14" fill="#333">john.smith@greencity.org</text>
+  
+  <text x="570" y="390" font-family="Arial" font-size="14" fill="#555">Phone</text>
+  <rect x="570" y="400" width="300" height="36" rx="5" fill="#ffffff" stroke="#ddd" stroke-width="1"/>
+  <text x="585" y="425" font-family="Arial" font-size="14" fill="#333">(555) 123-4567</text>
+  
+  <!-- Divider -->
+  <path d="M250 450 L880 450" stroke="#eee" stroke-width="1"/>
+  
+  <!-- Privacy section -->
+  <text x="250" y="475" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Privacy Settings</text>
+  
+  <!-- Toggle switches -->
+  <rect x="250" y="485" width="40" height="20" rx="10" fill="#3CB371"/>
+  <circle cx="280" cy="495" r="8" fill="white"/>
+  <text x="300" y="495" font-family="Arial" font-size="12" fill="#555">Share my community actions publicly</text>
+  
+  <rect x="570" y="485" width="40" height="20" rx="10" fill="#ddd"/>
+  <circle cx="580" cy="495" r="8" fill="white"/>
+  <text x="620" y="495" font-family="Arial" font-size="12" fill="#555">Allow location tracking for local data</text>
+  
+  <!-- Save button -->
+  <rect x="790" y="485" width="90" height="35" rx="5" fill="#3CB371"/>
+  <text x="835" y="507" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Save</text>
+  
+  <!-- Notification bell -->
+  <circle cx="880" cy="30" r="18" fill="transparent"/>
+  <path d="M880 15 L880 30 L890 30" stroke="white" stroke-width="2" fill="none"/>
+  <circle cx="880" cy="15" r="8" fill="transparent" stroke="white" stroke-width="2"/>
+  
+  <!-- User profile -->
+  <circle cx="920" cy="30" r="20" fill="#175437"/>
+  <text x="920" y="35" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">JS</text>
+</svg>

@@ -9,8 +9,8 @@ import { ThemeProvider } from 'next-themes'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Your Site Name',
-  description: 'Your site description',
+  title: 'CDTotten Dev',
+  description: 'CDTotten Dev is a software development company that specializes in building custom software solutions for businesses of all sizes.',
 }
 
 export default function RootLayout({

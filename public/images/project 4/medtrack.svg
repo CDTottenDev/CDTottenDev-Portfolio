@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600">
+  <!-- Main application container -->
+  <rect x="0" y="0" width="1000" height="600" fill="#f0f0f0"/>
+  
+  <!-- Header bar -->
+  <rect x="0" y="0" width="1000" height="60" fill="#4285F4"/>
+  <text x="30" y="38" font-family="Arial" font-size="24" fill="white" font-weight="bold">MedTrack</text>
+  
+  <!-- User section -->
+  <circle cx="950" cy="30" r="20" fill="white"/>
+  <text x="950" y="36" font-family="Arial" font-size="18" fill="#4285F4" font-weight="bold" text-anchor="middle">JP</text>
+  <text x="890" y="38" font-family="Arial" font-size="16" fill="white" text-anchor="end">John Patient</text>
+  
+  <!-- Left sidebar navigation -->
+  <rect x="0" y="60" width="200" height="540" fill="#fff" stroke="#ddd"/>
+  
+  <!-- Navigation items -->
+  <rect x="0" y="110" width="200" height="50" fill="#e3f2fd"/>
+  <text x="20" y="140" font-family="Arial" font-size="16" fill="#4285F4" font-weight="bold">Medications</text>
+  
+  <text x="20" y="190" font-family="Arial" font-size="16" fill="#666">Symptoms</text>
+  <text x="20" y="240" font-family="Arial" font-size="16" fill="#666">Reports</text>
+  <text x="20" y="290" font-family="Arial" font-size="16" fill="#666">Healthcare Team</text>
+  <text x="20" y="340" font-family="Arial" font-size="16" fill="#666">Notifications</text>
+  <text x="20" y="390" font-family="Arial" font-size="16" fill="#666">Settings</text>
+  
+  <!-- Main content area -->
+  <rect x="200" y="60" width="800" height="540" fill="#fff"/>
+  
+  <!-- Dashboard top stats -->
+  <rect x="220" y="80" width="230" height="100" rx="5" ry="5" fill="white" stroke="#ddd"/>
+  <text x="240" y="110" font-family="Arial" font-size="16" fill="#333" font-weight="bold">Today's Medications</text>
+  <text x="240" y="140" font-family="Arial" font-size="30" fill="#4285F4" font-weight="bold">8</text>
+  <text x="280" y="140" font-family="Arial" font-size="16" fill="#666">medications</text>
+  <rect x="310" y="125" width="120" height="25" rx="12" ry="12" fill="#e0f7fa" stroke="#ddd"/>
+  <text x="370" y="142" font-family="Arial" font-size="14" fill="#00838f" text-anchor="middle">2 taken</text>
+  
+  <rect x="470" y="80" width="230" height="100" rx="5" ry="5" fill="white" stroke="#ddd"/>
+  <text x="490" y="110" font-family="Arial" font-size="16" fill="#333" font-weight="bold">Upcoming Refills</text>
+  <text x="490" y="140" font-family="Arial" font-size="30" fill="#FF9800" font-weight="bold">3</text>
+  <text x="530" y="140" font-family="Arial" font-size="16" fill="#666">medications</text>
+  <rect x="560" y="125" width="120" height="25" rx="12" ry="12" fill="#fff3e0" stroke="#ddd"/>
+  <text x="620" y="142" font-family="Arial" font-size="14" fill="#e65100" text-anchor="middle">Next: 5 days</text>
+  
+  <rect x="720" y="80" width="230" height="100" rx="5" ry="5" fill="white" stroke="#ddd"/>
+  <text x="740" y="110" font-family="Arial" font-size="16" fill="#333" font-weight="bold">Health Trends</text>
+  <text x="740" y="140" font-family="Arial" font-size="30" fill="#4CAF50" font-weight="bold">92%</text>
+  <text x="810" y="140" font-family="Arial" font-size="16" fill="#666">adherence</text>
+  <rect x="810" y="125" width="120" height="25" rx="12" ry="12" fill="#e8f5e9" stroke="#ddd"/>
+  <text x="870" y="142" font-family="Arial" font-size="14" fill="#2e7d32" text-anchor="middle">+5% this week</text>
+  
+  <!-- Today's Schedule section -->
+  <text x="220" y="210" font-family="Arial" font-size="20" fill="#333" font-weight="bold">Today's Medication Schedule</text>
+  
+  <!-- Morning medication card -->
+  <rect x="220" y="230" width="750" height="80" rx="5" ry="5" fill="white" stroke="#ddd"/>
+  <rect x="220" y="230" width="10" height="80" fill="#FFD700" rx="2" ry="2"/>
+  <rect x="240" y="245" width="50" height="50" rx="25" ry="25" fill="#FFD700"/>
+  <text x="265" y="275" font-family="Arial" font-size="16" fill="white" font-weight="bold" text-anchor="middle">AM</text>
+  <text x="310" y="260" font-family="Arial" font-size="18" fill="#333" font-weight="bold">Morning Medications</text>
+  <text x="310" y="285" font-family="Arial" font-size="15" fill="#666">8:00 AM • 3 medications</text>
+  <rect x="760" y="255" width="180" height="30" rx="15" ry="15" fill="#4CAF50"/>
+  <text x="850" y="275" font-family="Arial" font-size="14" fill="white" font-weight="bold" text-anchor="middle">TAKEN</text>
+  
+  <!-- Afternoon medication card -->
+  <rect x="220" y="330" width="750" height="80" rx="5" ry="5" fill="white" stroke="#ddd"/>
+  <rect x="220" y="330" width="10" height="80" fill="#4285F4" rx="2" ry="2"/>
+  <rect x="240" y="345" width="50" height="50" rx="25" ry="25" fill="#4285F4"/>
+  <text x="265" y="375" font-family="Arial" font-size="16" fill="white" font-weight="bold" text-anchor="middle">PM</text>
+  <text x="310" y="360" font-family="Arial" font-size="18" fill="#333" font-weight="bold">Afternoon Medications</text>
+  <text x="310" y="385" font-family="Arial" font-size="15" fill="#666">2:00 PM • 2 medications</text>
+  <rect x="760" y="355" width="180" height="30" rx="15" ry="15" fill="#FF9800"/>
+  <text x="850" y="375" font-family="Arial" font-size="14" fill="white" font-weight="bold" text-anchor="middle">DUE IN 30 MINUTES</text>
+  
+  <!-- Evening medication card -->
+  <rect x="220" y="430" width="750" height="80" rx="5" ry="5" fill="white" stroke="#ddd"/>
+  <rect x="220" y="430" width="10" height="80" fill="#673AB7" rx="2" ry="2"/>
+  <rect x="240" y="445" width="50" height="50" rx="25" ry="25" fill="#673AB7"/>
+  <text x="265" y="475" font-family="Arial" font-size="16" fill="white" font-weight="bold" text-anchor="middle">EVE</text>
+  <text x="310" y="460" font-family="Arial" font-size="18" fill="#333" font-weight="bold">Evening Medications</text>
+  <text x="310" y="485" font-family="Arial" font-size="15" fill="#666">8:00 PM • 3 medications</text>
+  <rect x="760" y="455" width="180" height="30" rx="15" ry="15" fill="#E0E0E0"/>
+  <text x="850" y="475" font-family="Arial" font-size="14" fill="#666" font-weight="bold" text-anchor="middle">UPCOMING</text>
+  
+  <!-- Refill alert section -->
+  <rect x="220" y="530" width="750" height="60" rx="5" ry="5" fill="#fff3e0" stroke="#FF9800" stroke-width="1"/>
+  <text x="270" y="555" font-family="Arial" font-size="16" fill="#333" font-weight="bold">Refill Alert: Lisinopril 20mg</text>
+  <text x="270" y="575" font-family="Arial" font-size="14" fill="#666">5 tablets remaining • Refill needed within 5 days</text>
+  <rect x="240" y="540" width="10" height="40" fill="#FF9800" rx="2" ry="2"/>
+  <rect x="810" y="545" width="130" height="30" rx="15" ry="15" fill="#FF9800"/>
+  <text x="875" y="565" font-family="Arial" font-size="14" fill="white" font-weight="bold" text-anchor="middle">REFILL NOW</text>
+</svg>
