@@ -28,12 +28,12 @@ export default function Home() {
   const opacity3 = useTransform(scrollYProgress, [0.5, 0.8], [0, 1]);
   
   const [skills] = useState([
-    { name: "React", level: 90 },
-    { name: "TypeScript", level: 85 },
-    { name: "Next.js", level: 88 },
+    { name: "React", level: 95 },
+    { name: "TypeScript", level: 90 },
+    { name: "Next.js", level: 95 },
     { name: "Tailwind CSS", level: 92 },
-    { name: "Node.js", level: 80 },
-    { name: "GraphQL", level: 75 },
+    { name: "Node.js", level: 92 },
+    { name: "GraphQL", level: 85 },
   ]);
   
   // Console easter egg
@@ -335,7 +335,7 @@ export default function Home() {
                 {
                   name: "Alex Johnson",
                   role: "Marketing Director",
-                  content: "Working with this developer was surprisingly painless. Our website not only looks great but actually functions properly—a rare combo in my experience."
+                  content: "Working with this developer was painless. Our website not only looks great but functions properly—a rare combo in my experience."
                 },
                 {
                   name: "Sarah Williams",
@@ -345,7 +345,7 @@ export default function Home() {
                 {
                   name: "Michael Chen",
                   role: "E-commerce Manager",
-                  content: "Our conversion rate increased 40% after the redesign. Would hire again just for the sarcastic project updates alone."
+                  content: "Not only was the work top-notch, but the experience was just as good. Definitely hiring again!"
                 }
               ].map((testimonial, index) => (
                 <motion.div 
