@@ -451,7 +451,7 @@ export default function Home() {
                   </a>
                 </div>
                 <p className="text-slate-400 text-sm">
-                  Based in San Francisco, CA • Available for remote work
+                  Based in Central Florida • Available for remote work
                 </p>
               </div>
             </div>
