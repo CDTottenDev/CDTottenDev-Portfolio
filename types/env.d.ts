@@ -1,9 +1,7 @@
 declare namespace NodeJS {
   interface ProcessEnv {
-    SMTP_HOST: string;
-    SMTP_PORT: string;
-    SMTP_LOGIN: string;
-    SMTP_PASSWORD: string;
-    SMTP_FROM_NAME: string;
+    BREVO_API_KEY: string;
+    BREVO_SENDER_EMAIL: string;
+    BREVO_SENDER_NAME: string;
   }
 }

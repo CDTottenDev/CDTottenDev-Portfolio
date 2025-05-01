@@ -1,5 +1,4 @@
 import { NextResponse } from 'next/server';
-import nodemailer from 'nodemailer';
 import { type NextRequest } from 'next/server';
 
 interface ContactForm {
@@ -11,11 +10,9 @@ interface ContactForm {
 
 // Validate environment variables at startup
 const requiredEnvVars = [
-  'SMTP_HOST',
-  'SMTP_PORT',
-  'SMTP_LOGIN',
-  'SMTP_PASSWORD',
-  'SMTP_FROM_NAME'
+  'BREVO_API_KEY',
+  'BREVO_SENDER_EMAIL',
+  'BREVO_SENDER_NAME'
 ] as const;
 
 for (const envVar of requiredEnvVars) {
@@ -24,32 +21,7 @@ for (const envVar of requiredEnvVars) {
   }
 }
 
-// Create reusable transporter object using environment variables
-const createTransporter = () => {
-  return nodemailer.createTransport({
-    host: process.env.SMTP_HOST,
-    port: parseInt(process.env.SMTP_PORT),
-    secure: false, // TLS required
-    auth: {
-      user: process.env.SMTP_LOGIN,
-      pass: process.env.SMTP_PASSWORD
-    },
-    // Additional security options
-    tls: {
-      // Reject unauthorized connections
-      rejectUnauthorized: true,
-      // Minimum TLS version
-      minVersion: 'TLSv1.2'
-    }
-  });
-};
-
 export async function POST(req: NextRequest) {
-  // Rate limiting headers (to be implemented with a proper rate limiting solution)
-  const response = new NextResponse();
-  response.headers.set('X-RateLimit-Limit', '100');
-  response.headers.set('X-RateLimit-Remaining', '99');
-
   try {
     // Validate request method
     if (req.method !== 'POST') {
@@ -79,10 +51,10 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // Sanitize inputs (basic example - consider using a library like DOMPurify for production)
+    // Sanitize inputs
     const sanitizeInput = (input: string) => {
       return input
-        .replace(/[<>]/g, '') // Remove < and >
+        .replace(/[<>]/g, '')
         .trim();
     };
 
@@ -93,26 +65,22 @@ export async function POST(req: NextRequest) {
       message: sanitizeInput(message)
     };
 
-    const transporter = createTransporter();
-
-    const mailOptions = {
-      from: {
-        name: process.env.SMTP_FROM_NAME,
-        address: process.env.SMTP_LOGIN
+    // Prepare email content
+    const emailContent = {
+      sender: {
+        name: process.env.BREVO_SENDER_NAME,
+        email: process.env.BREVO_SENDER_EMAIL
       },
-      to: process.env.SMTP_LOGIN,
+      to: [{
+        email: process.env.BREVO_SENDER_EMAIL,
+        name: process.env.BREVO_SENDER_NAME
+      }],
       replyTo: {
-        name: sanitizedData.name,
-        address: sanitizedData.email
+        email: sanitizedData.email,
+        name: sanitizedData.name
       },
       subject: `Website Contact: ${sanitizedData.subject}`,
-      text: `
-Name: ${sanitizedData.name}
-Email: ${sanitizedData.email}
-Subject: ${sanitizedData.subject}
-Message: ${sanitizedData.message}
-      `.trim(),
-      html: `
+      htmlContent: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <h2>New Contact Form Submission</h2>
           <p><strong>Name:</strong> ${sanitizedData.name}</p>
@@ -123,17 +91,37 @@ Message: ${sanitizedData.message}
             ${sanitizedData.message.replace(/\n/g, '<br>')}
           </div>
         </div>
+      `,
+      textContent: `
+Name: ${sanitizedData.name}
+Email: ${sanitizedData.email}
+Subject: ${sanitizedData.subject}
+Message: ${sanitizedData.message}
       `.trim()
     };
 
     try {
-      // Verify SMTP connection before sending
-      await transporter.verify();
-      const info = await transporter.sendMail(mailOptions);
-      console.log('Message sent: %s', info.messageId);
+      // Send email using Brevo API
+      const response = await fetch('https://api.brevo.com/v3/smtp/email', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+          'api-key': process.env.BREVO_API_KEY
+        },
+        body: JSON.stringify(emailContent)
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        console.error('Brevo API Error:', errorData);
+        throw new Error('Failed to send email');
+      }
+
+      const result = await response.json();
 
       return NextResponse.json(
-        { message: 'Email sent successfully', id: info.messageId },
+        { message: 'Email sent successfully', id: result.messageId },
         { 
           status: 200,
           headers: {
@@ -143,12 +131,7 @@ Message: ${sanitizedData.message}
         }
       );
     } catch (error) {
-      console.error('SMTP Error Details:', {
-        message: error instanceof Error ? error.message : String(error),
-        code: error instanceof Error && 'code' in error ? (error as any).code : undefined,
-        command: error instanceof Error && 'command' in error ? (error as any).command : undefined,
-        response: error instanceof Error && 'response' in error ? (error as any).response : undefined,
-      });
+      console.error('Email Sending Error:', error);
       
       return NextResponse.json(
         { error: 'Failed to send email. Please try again later.' },
