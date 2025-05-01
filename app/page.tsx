@@ -36,11 +36,54 @@ export default function Home() {
     { name: "GraphQL", level: 85 },
   ]);
   
+  const [formStatus, setFormStatus] = useState({
+    loading: false,
+    success: false,
+    error: null as string | null,
+  });
+  
   // Console easter egg
   useEffect(() => {
     console.log("%cWell hello there, curious developer! 👋", "font-size: 20px; font-weight: bold; color: #6366f1;");
     console.log("%cSince you're inspecting my code, you might as well hire me 😉", "font-size: 16px; color: #4f46e5;");
   }, []);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setFormStatus({ loading: true, success: false, error: null });
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    const data = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      subject: formData.get('subject'),
+      message: formData.get('message'),
+    };
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send message');
+      }
+
+      setFormStatus({ loading: false, success: true, error: null });
+      form.reset();
+    } catch (error) {
+      setFormStatus({
+        loading: false,
+        success: false,
+        error: 'Failed to send message. Please try again.',
+      });
+    }
+  };
 
   return (
     <div ref={containerRef} className="min-h-screen bg-slate-900 text-white overflow-x-hidden">
@@ -390,7 +433,7 @@ export default function Home() {
               Got a project in mind? Let's talk about how I can help you build something awesome.
             </p>
             
-            <form className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-slate-400 mb-1">Name</label>
@@ -430,12 +473,37 @@ export default function Home() {
                 ></textarea>
               </div>
               <div>
-                <button type="submit" className="bg-indigo-600 hover:bg-indigo-700 text-white w-full py-3 rounded-md transition-colors font-medium flex items-center justify-center gap-2">
-                  <Mail className="h-5 w-5" />
-                  Send Message
+                <button 
+                  type="submit" 
+                  disabled={formStatus.loading}
+                  className="bg-indigo-600 hover:bg-indigo-700 text-white w-full py-3 rounded-md transition-colors font-medium flex items-center justify-center gap-2 disabled:opacity-50"
+                >
+                  {formStatus.loading ? (
+                    <>
+                      <span className="animate-spin">⏳</span>
+                      Sending...
+                    </>
+                  ) : (
+                    <>
+                      <Mail className="h-5 w-5" />
+                      Send Message
+                    </>
+                  )}
                 </button>
               </div>
             </form>
+            
+            {formStatus.success && (
+              <div className="text-green-500 text-center">
+                Message sent successfully! We'll get back to you soon.
+              </div>
+            )}
+
+            {formStatus.error && (
+              <div className="text-red-500 text-center">
+                {formStatus.error}
+              </div>
+            )}
             
             <div className="mt-8 pt-8 border-t border-slate-700">
               <div className="flex flex-col md:flex-row items-center justify-between gap-4">
