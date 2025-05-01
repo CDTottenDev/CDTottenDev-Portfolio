@@ -440,6 +440,8 @@ export default function Home() {
                   <input
                     type="text"
                     id="name"
+                    name="name"
+                    required
                     className="w-full bg-slate-800 border border-slate-700 rounded-md py-2 px-4 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
                     placeholder="John Doe"
                   />
@@ -449,6 +451,8 @@ export default function Home() {
                   <input
                     type="email"
                     id="email"
+                    name="email"
+                    required
                     className="w-full bg-slate-800 border border-slate-700 rounded-md py-2 px-4 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
                     placeholder="john@example.com"
                   />
@@ -459,6 +463,8 @@ export default function Home() {
                 <input
                   type="text"
                   id="subject"
+                  name="subject"
+                  required
                   className="w-full bg-slate-800 border border-slate-700 rounded-md py-2 px-4 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
                   placeholder="Project Inquiry"
                 />
@@ -467,6 +473,8 @@ export default function Home() {
                 <label htmlFor="message" className="block text-sm font-medium text-slate-400 mb-1">Message</label>
                 <textarea
                   id="message"
+                  name="message"
+                  required
                   rows={5}
                   className="w-full bg-slate-800 border border-slate-700 rounded-md py-2 px-4 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
                   placeholder="Tell me about your project..."
@@ -491,19 +499,19 @@ export default function Home() {
                   )}
                 </button>
               </div>
-            </form>
-            
-            {formStatus.success && (
-              <div className="text-green-500 text-center">
-                Message sent successfully! We'll get back to you soon.
-              </div>
-            )}
 
-            {formStatus.error && (
-              <div className="text-red-500 text-center">
-                {formStatus.error}
-              </div>
-            )}
+              {formStatus.success && (
+                <div className="mt-4 p-4 bg-green-500/10 border border-green-500/20 rounded-md text-green-400 text-center">
+                  Message sent successfully! We'll get back to you soon.
+                </div>
+              )}
+
+              {formStatus.error && (
+                <div className="mt-4 p-4 bg-red-500/10 border border-red-500/20 rounded-md text-red-400 text-center">
+                  {formStatus.error}
+                </div>
+              )}
+            </form>
             
             <div className="mt-8 pt-8 border-t border-slate-700">
               <div className="flex flex-col md:flex-row items-center justify-between gap-4">
