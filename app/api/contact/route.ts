@@ -90,9 +90,19 @@ Message: ${message}
         { status: 200 }
       );
     } catch (error) {
-      console.error('SMTP Error:', error);
+      // More detailed error logging
+      console.error('SMTP Error Details:', {
+        message: error instanceof Error ? error.message : String(error),
+        code: error instanceof Error && 'code' in error ? (error as any).code : undefined,
+        command: error instanceof Error && 'command' in error ? (error as any).command : undefined,
+        response: error instanceof Error && 'response' in error ? (error as any).response : undefined,
+      });
+      
       return NextResponse.json(
-        { error: 'Failed to send email. Please try again later.' },
+        { 
+          error: 'Failed to send email. Please try again later.',
+          details: error instanceof Error ? error.message : String(error)  // Only in development
+        },
         { status: 500 }
       );
     }
