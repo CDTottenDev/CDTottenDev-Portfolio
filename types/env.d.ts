@@ -1,6 +1,9 @@
 declare namespace NodeJS {
   interface ProcessEnv {
-    ZOHO_EMAIL: string;
-    ZOHO_APP_PASSWORD: string;
+    SMTP_HOST: string;
+    SMTP_PORT: string;
+    SMTP_LOGIN: string;
+    SMTP_PASSWORD: string;
+    SMTP_FROM_NAME: string;
   }
 }

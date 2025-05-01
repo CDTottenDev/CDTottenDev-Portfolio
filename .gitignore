@@ -37,3 +37,8 @@ next-env.d.ts
 
 # naming conventions
 naming-conventions.txt
+
+# Environment variables
+.env
+.env.local
+.env.*.local
